@@ -359,6 +359,10 @@ jobs:
       working-directory: ./src/Kp2aAutofillParser.Tests
       run: dotnet test
 
+    - name: Test S3 path codec
+      working-directory: ./src/Kp2aS3PathCodec.Tests
+      run: dotnet test
+
     - name: Build APK (nonet)
       run: |
         make apk Flavor=NoNet
